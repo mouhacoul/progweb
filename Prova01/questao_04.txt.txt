@@ -1,0 +1,9 @@
+breve explicação sobre o significado de closure.
+--Closure é a forma de acessa uma variavel dentro de um escopo..
+
+
+descreva como o código abaixo explora (usa) esserecurso da linguagem.
+
+--Sempre que um variavel ou function aparecer dentro de
+um escopo, essa declaração é visível em qualquer lugar
+desse escopo

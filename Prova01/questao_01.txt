@@ -1,0 +1,20 @@
+questão 1 : 4 erros sintáticos :
+
+
+linha 02 - tag <html> não está declarado para iniciar os codigos html
+	deve-se escrever o tag <html> ao lugar do tag <body>
+
+linha 05 - o tag <script> deve ser substituido para <style>
+
+linha 10 - o tag </script> deve ser </style>
+
+linha 19 - o tag <style> deve ser <script>
+
+linha 22- o tag </style> de ver ser </script>
+
+linha 23 - o tag </head> dever estar fechado na linha 10 antes de <h1>
+
+
+
+
+	
