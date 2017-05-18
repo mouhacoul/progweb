@@ -7,3 +7,6 @@ descreva como o código abaixo explora (usa) esserecurso da linguagem.
 --Sempre que um variavel ou function aparecer dentro de
 um escopo, essa declaração é visível em qualquer lugar
 desse escopo
+
+Nota: 0.0
+Vc descreveu o conceito de hoisting
