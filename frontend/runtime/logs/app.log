@@ -1,0 +1,1099 @@
+2017-06-05 15:42:52 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Base 'yii2advanced' inconnue' in C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Connection.php:630
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare('<span class="ke...')
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(352): yii\db\Command->queryColumn()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Schema.php(234): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2-gii\generators\model\Generator.php(158): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 C:\wamp64\www\advanced\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#12 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\Object->__construct(Array)
+#14 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#15 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\ActiveForm.php(302): yii\BaseYii::createObject(Array)
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2-gii\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#19 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(328): require('C:\\wamp64\\www\\a...')
+#20 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#21 C:\wamp64\www\advanced\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array)
+#22 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(328): require('C:\\wamp64\\www\\a...')
+#23 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#24 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(yii\gii\controllers\DefaultController))
+#25 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#26 C:\wamp64\www\advanced\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(61): yii\base\Controller->render('view', Array)
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#28 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#29 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#30 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('view', Array)
+#31 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('gii/default/vie...', Array)
+#32 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 C:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Base 'yii2advanced' inconnue' in C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Connection.php:568
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare('<span class="ke...')
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(352): yii\db\Command->queryColumn()
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Schema.php(234): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2-gii\generators\model\Generator.php(158): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\Object->__construct(Array)
+#12 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#13 C:\wamp64\www\advanced\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#14 C:\wamp64\www\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#15 C:\wamp64\www\advanced\vendor\yiisoft\yii2\widgets\ActiveForm.php(302): yii\BaseYii::createObject(Array)
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2-gii\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(328): require('C:\\wamp64\\www\\a...')
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#19 C:\wamp64\www\advanced\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array)
+#20 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(328): require('C:\\wamp64\\www\\a...')
+#21 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\wamp64\\www\\a...', Array)
+#22 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\wamp64\\www\\a...', Array, Object(yii\gii\controllers\DefaultController))
+#23 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#24 C:\wamp64\www\advanced\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(61): yii\base\Controller->render('view', Array)
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#26 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#27 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#28 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('view', Array)
+#29 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('gii/default/vie...', Array)
+#30 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2017-06-05 15:42:52 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'ssc1d7ttbvbbm7ukuhglas9mo4'
+    '_csrf-frontend' => 'f6a10605dd20c8bfe11459733c89a7463a600080016f8c5a4009edfbb7032681a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"AFFc1TAkqMOgU_iOOnSA6XnDGSx9DBKm\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=gii'
+    'HTTP_COOKIE' => 'advanced-frontend=ssc1d7ttbvbbm7ukuhglas9mo4; _csrf-frontend=f6a10605dd20c8bfe11459733c89a7463a600080016f8c5a4009edfbb7032681a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22AFFc1TAkqMOgU_iOOnSA6XnDGSx9DBKm%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '56968'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496677372.623
+    'REQUEST_TIME' => 1496677372
+]
+2017-06-05 19:24:03 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'data' (T_STRING)' in C:\wamp64\www\advanced\frontend\controllers\SiteController.php:142
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(633): ::spl_autoload_call()
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(633): ::class_exists()
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(591): yii\base\Module->createControllerByID()
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(517): yii\base\Module->createController()
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#6 C:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2017-06-05 19:24:03 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'cg8cboidfoa9uriumj6v232ll7'
+    '_csrf-frontend' => '636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=cg8cboidfoa9uriumj6v232ll7; _csrf-frontend=636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57443'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496690643.438
+    'REQUEST_TIME' => 1496690643
+]
+2017-06-05 19:24:08 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'data' (T_STRING)' in C:\wamp64\www\advanced\frontend\controllers\SiteController.php:142
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(633): ::spl_autoload_call()
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(633): ::class_exists()
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(591): yii\base\Module->createControllerByID()
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(517): yii\base\Module->createController()
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#6 C:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2017-06-05 19:24:08 [::1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'cg8cboidfoa9uriumj6v232ll7'
+    '_csrf-frontend' => '636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/'
+    'HTTP_COOKIE' => 'advanced-frontend=cg8cboidfoa9uriumj6v232ll7; _csrf-frontend=636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57444'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496690648.157
+    'REQUEST_TIME' => 1496690648
+]
+2017-06-05 19:25:29 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'data' (T_STRING)' in C:\wamp64\www\advanced\frontend\controllers\SiteController.php:142
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(633): ::spl_autoload_call()
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(633): ::class_exists()
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(591): yii\base\Module->createControllerByID()
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(517): yii\base\Module->createController()
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#6 C:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2017-06-05 19:25:29 [::1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'cg8cboidfoa9uriumj6v232ll7'
+    '_csrf-frontend' => '636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=cg8cboidfoa9uriumj6v232ll7; _csrf-frontend=636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57458'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496690729.596
+    'REQUEST_TIME' => 1496690729
+]
+2017-06-05 19:25:55 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'date() expects at least 1 parameter, 0 given' in C:\wamp64\www\advanced\frontend\controllers\SiteController.php:142
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\SiteController->actionAbout()
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#6 C:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2017-06-05 19:25:55 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'cg8cboidfoa9uriumj6v232ll7'
+    '_csrf-frontend' => '636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=cg8cboidfoa9uriumj6v232ll7; _csrf-frontend=636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57461'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496690755.409
+    'REQUEST_TIME' => 1496690755
+]
+2017-06-05 19:30:37 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataHora' in C:\wamp64\www\advanced\frontend\views\site\about.php:16
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render()
+#3 C:\wamp64\www\advanced\frontend\controllers\SiteController.php(144): yii\base\Controller->render()
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\SiteController->actionAbout()
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 C:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-06-05 19:30:37 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'cg8cboidfoa9uriumj6v232ll7'
+    '_csrf-frontend' => '636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=site%2Fabout'
+    'HTTP_COOKIE' => 'advanced-frontend=cg8cboidfoa9uriumj6v232ll7; _csrf-frontend=636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57646'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496691037.45
+    'REQUEST_TIME' => 1496691037
+]
+2017-06-05 19:31:04 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataHora' in C:\wamp64\www\advanced\frontend\views\site\about.php:16
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render()
+#3 C:\wamp64\www\advanced\frontend\controllers\SiteController.php(144): yii\base\Controller->render()
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\SiteController->actionAbout()
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 C:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-06-05 19:31:04 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'cg8cboidfoa9uriumj6v232ll7'
+    '_csrf-frontend' => '636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=site%2Fabout'
+    'HTTP_COOKIE' => 'advanced-frontend=cg8cboidfoa9uriumj6v232ll7; _csrf-frontend=636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57652'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496691063.982
+    'REQUEST_TIME' => 1496691063
+]
+2017-06-05 19:31:28 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataHora' in C:\wamp64\www\advanced\frontend\views\site\about.php:16
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render()
+#3 C:\wamp64\www\advanced\frontend\controllers\SiteController.php(144): yii\base\Controller->render()
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\SiteController->actionAbout()
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 C:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-06-05 19:31:28 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'cg8cboidfoa9uriumj6v232ll7'
+    '_csrf-frontend' => '636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=site%2Fabout'
+    'HTTP_COOKIE' => 'advanced-frontend=cg8cboidfoa9uriumj6v232ll7; _csrf-frontend=636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57669'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496691088.185
+    'REQUEST_TIME' => 1496691088
+]
+2017-06-05 19:33:52 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataHora' in C:\wamp64\www\advanced\frontend\views\site\about.php:16
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render()
+#3 C:\wamp64\www\advanced\frontend\controllers\SiteController.php(144): yii\base\Controller->render()
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\SiteController->actionAbout()
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 C:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-06-05 19:33:52 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'cg8cboidfoa9uriumj6v232ll7'
+    '_csrf-frontend' => '636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=site%2Fabout'
+    'HTTP_COOKIE' => 'advanced-frontend=cg8cboidfoa9uriumj6v232ll7; _csrf-frontend=636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57731'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496691232.236
+    'REQUEST_TIME' => 1496691232
+]
+2017-06-05 19:33:53 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataHora' in C:\wamp64\www\advanced\frontend\views\site\about.php:16
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render()
+#3 C:\wamp64\www\advanced\frontend\controllers\SiteController.php(144): yii\base\Controller->render()
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\SiteController->actionAbout()
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 C:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-06-05 19:33:53 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'cg8cboidfoa9uriumj6v232ll7'
+    '_csrf-frontend' => '636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=site%2Fabout'
+    'HTTP_COOKIE' => 'advanced-frontend=cg8cboidfoa9uriumj6v232ll7; _csrf-frontend=636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57732'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496691233.518
+    'REQUEST_TIME' => 1496691233
+]
+2017-06-05 19:33:58 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataHora' in C:\wamp64\www\advanced\frontend\views\site\about.php:16
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render()
+#3 C:\wamp64\www\advanced\frontend\controllers\SiteController.php(144): yii\base\Controller->render()
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\SiteController->actionAbout()
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 C:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-06-05 19:33:58 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'cg8cboidfoa9uriumj6v232ll7'
+    '_csrf-frontend' => '636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=cg8cboidfoa9uriumj6v232ll7; _csrf-frontend=636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57744'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496691238.143
+    'REQUEST_TIME' => 1496691238
+]
+2017-06-05 19:37:28 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataHora' in C:\wamp64\www\advanced\frontend\views\site\about.php:16
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render()
+#3 C:\wamp64\www\advanced\frontend\controllers\SiteController.php(144): yii\base\Controller->render()
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\SiteController->actionAbout()
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 C:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-06-05 19:37:28 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'cg8cboidfoa9uriumj6v232ll7'
+    '_csrf-frontend' => '636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=cg8cboidfoa9uriumj6v232ll7; _csrf-frontend=636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57880'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496691448.791
+    'REQUEST_TIME' => 1496691448
+]
+2017-06-05 19:37:29 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataHora' in C:\wamp64\www\advanced\frontend\views\site\about.php:16
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render()
+#3 C:\wamp64\www\advanced\frontend\controllers\SiteController.php(144): yii\base\Controller->render()
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\SiteController->actionAbout()
+#5 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 C:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-06-05 19:37:29 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'cg8cboidfoa9uriumj6v232ll7'
+    '_csrf-frontend' => '636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=cg8cboidfoa9uriumj6v232ll7; _csrf-frontend=636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57881'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496691449.795
+    'REQUEST_TIME' => 1496691449
+]
+2017-06-05 20:07:23 [::1][-][cg8cboidfoa9uriumj6v232ll7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 La table 'yiiteste.user' n'existe pas' in C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Command.php:902
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Command.php(902): PDOStatement->execute()
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#5 C:\wamp64\www\advanced\common\models\User.php(83): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#6 C:\wamp64\www\advanced\common\models\LoginForm.php(73): common\models\User::findByUsername('<span class="st...')
+#7 C:\wamp64\www\advanced\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#8 [internal function]: common\models\LoginForm->validatePassword('<span class="st...', '<span class="ke...', Object(yii\validators\InlineValidator))
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func('[<span class="t...', '<span class="st...', '<span class="ke...', Object(yii\validators\InlineValidator))
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), '<span class="st...')
+#11 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Model.php(358): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), '[<span class="s...')
+#12 C:\wamp64\www\advanced\common\models\LoginForm.php(58): yii\base\Model->validate()
+#13 C:\wamp64\www\advanced\frontend\controllers\SiteController.php(90): common\models\LoginForm->login()
+#14 [internal function]: frontend\controllers\SiteController->actionLogin()
+#15 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#19 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#21 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 La table 'yiiteste.user' n'existe pas
+The SQL being executed was: SELECT * FROM `user` WHERE (`username`='demo') AND (`status`=10)' in C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#5 C:\wamp64\www\advanced\common\models\User.php(83): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#6 C:\wamp64\www\advanced\common\models\LoginForm.php(73): common\models\User::findByUsername('<span class="st...')
+#7 C:\wamp64\www\advanced\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#8 [internal function]: common\models\LoginForm->validatePassword('<span class="st...', '<span class="ke...', Object(yii\validators\InlineValidator))
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func('[<span class="t...', '<span class="st...', '<span class="ke...', Object(yii\validators\InlineValidator))
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), '<span class="st...')
+#11 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Model.php(358): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), '[<span class="s...')
+#12 C:\wamp64\www\advanced\common\models\LoginForm.php(58): yii\base\Model->validate()
+#13 C:\wamp64\www\advanced\frontend\controllers\SiteController.php(90): common\models\LoginForm->login()
+#14 [internal function]: frontend\controllers\SiteController->actionLogin()
+#15 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#19 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => La table 'yiiteste.user' n'existe pas
+)
+
+2017-06-05 20:07:23 [::1][-][cg8cboidfoa9uriumj6v232ll7][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'aW5fRlFiNXkLAyoTMwYHE1Aabiw3NHQzUQIFJ2MYGEkxNzdyNQB2CA=='
+    'LoginForm' => [
+        'username' => 'demo'
+        'password' => 'demo'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'cg8cboidfoa9uriumj6v232ll7'
+    '_csrf-frontend' => '636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'npnorfy'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '203'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'advanced-frontend=cg8cboidfoa9uriumj6v232ll7; _csrf-frontend=636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '58398'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496693242.995
+    'REQUEST_TIME' => 1496693242
+]
+2017-06-05 20:16:03 [::1][-][cg8cboidfoa9uriumj6v232ll7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 La table 'yiiteste.user' n'existe pas' in C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Command.php:902
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Command.php(902): PDOStatement->execute()
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#5 C:\wamp64\www\advanced\common\models\User.php(83): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#6 C:\wamp64\www\advanced\common\models\LoginForm.php(73): common\models\User::findByUsername('<span class="st...')
+#7 C:\wamp64\www\advanced\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#8 [internal function]: common\models\LoginForm->validatePassword('<span class="st...', '<span class="ke...', Object(yii\validators\InlineValidator))
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func('[<span class="t...', '<span class="st...', '<span class="ke...', Object(yii\validators\InlineValidator))
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), '<span class="st...')
+#11 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Model.php(358): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), '[<span class="s...')
+#12 C:\wamp64\www\advanced\common\models\LoginForm.php(58): yii\base\Model->validate()
+#13 C:\wamp64\www\advanced\frontend\controllers\SiteController.php(90): common\models\LoginForm->login()
+#14 [internal function]: frontend\controllers\SiteController->actionLogin()
+#15 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#19 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#21 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 La table 'yiiteste.user' n'existe pas
+The SQL being executed was: SELECT * FROM `user` WHERE (`username`='demo') AND (`status`=10)' in C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#3 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#4 C:\wamp64\www\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#5 C:\wamp64\www\advanced\common\models\User.php(83): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#6 C:\wamp64\www\advanced\common\models\LoginForm.php(73): common\models\User::findByUsername('<span class="st...')
+#7 C:\wamp64\www\advanced\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#8 [internal function]: common\models\LoginForm->validatePassword('<span class="st...', '<span class="ke...', Object(yii\validators\InlineValidator))
+#9 C:\wamp64\www\advanced\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func('[<span class="t...', '<span class="st...', '<span class="ke...', Object(yii\validators\InlineValidator))
+#10 C:\wamp64\www\advanced\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), '<span class="st...')
+#11 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Model.php(358): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), '[<span class="s...')
+#12 C:\wamp64\www\advanced\common\models\LoginForm.php(58): yii\base\Model->validate()
+#13 C:\wamp64\www\advanced\frontend\controllers\SiteController.php(90): common\models\LoginForm->login()
+#14 [internal function]: frontend\controllers\SiteController->actionLogin()
+#15 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#16 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#17 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#18 C:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#19 C:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => La table 'yiiteste.user' n'existe pas
+)
+
+2017-06-05 20:16:02 [::1][-][cg8cboidfoa9uriumj6v232ll7][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'YlI1dGFfc18AP0AhAztBNVsmBB4HCTIVWj5vFVMlXm86C11ABT0wLg=='
+    'LoginForm' => [
+        'username' => 'demo'
+        'password' => 'demo'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'cg8cboidfoa9uriumj6v232ll7'
+    '_csrf-frontend' => '636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'npnorfy'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '203'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'advanced-frontend=cg8cboidfoa9uriumj6v232ll7; _csrf-frontend=636a955414d6112c9a93dc3a3ce818c411b6f1c32308428e5749324d749fc639a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bmuUbd2j9t1jfVAJ8lZa2z-0XYh4dbCq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '58569'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496693762.892
+    'REQUEST_TIME' => 1496693762
+]
