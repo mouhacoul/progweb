@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Instituto de Computação</title>
+      <style>
+        .tabela{
+          float: left;
+          margin: 10px;
+          text-align: center;
+        }
+      </style>
+      <script type="text/javascript">
+        function escreverTabuada(){
+          var x;
+          var y;
+          for(x=1; x < 11; x++){
+            document.write("<table class=\"tabela\" border=\"1\">");
+            document.write("<thead>");
+            document.write("<tr>");
+            document.write("<td colspan=2><b>Produtos de "+ x +"</td><b>");
+            document.write("</tr>");
+            document.write("</thead>");
+            document.write("<tbody>");
+            for(y=1; y < 11;y++){
+              document.write("<tr>");
+              document.write("<td>" + x + "x" + y + "</td>");
+              document.write("<td>" + (x*y) + "</td>");
+              document.write("</tr>");
+            }
+            document.write("</tbody>");
+            document.write("</table>");
+
+          }
+        }
+
+      </script>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+    escreverTabuada();
+    </script>
+  </body>
+</html>
